@@ -1,0 +1,9 @@
+nohup: ignoring input
+/home/pengjian/anaconda3/envs/PyTorch/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+begin train
+model has load weight without ddp
+Epoch 0
+-------------------------------
+predshape48,torch.Size([1, 30, 440, 408])
+labelshape48,torch.Size([1, 30, 440, 408])

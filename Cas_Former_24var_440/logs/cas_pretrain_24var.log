@@ -1,0 +1,154 @@
+nohup: ignoring input
+begin trainbegin train
+
+2025-09-24 14:06:03,346 (pretrain:31) WARNING: Cuda is available!
+2025-09-24 14:06:03,346 (pretrain:31) WARNING: Cuda is available!
+2025-09-24 14:06:03,346 (pretrain:33) WARNING: Find 2 GPUs!
+2025-09-24 14:06:03,346 (pretrain:33) WARNING: Find 2 GPUs!
+/home/pengjian/anaconda3/envs/PyTorch/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/pengjian/anaconda3/envs/PyTorch/lib/python3.10/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+use ddp, local_rank:0
+use ddp, local_rank:1
+model has load weight with ddp
+model has load weight with ddp
+ddpEpoch 12
+-------------------------------
+ddp Sample of train: 61344
+predshape1,torch.Size([8, 24, 440, 408])
+labelshape1,torch.Size([8, 24, 440, 408])
+predshape1,torch.Size([8, 24, 440, 408])
+labelshape1,torch.Size([8, 24, 440, 408])
+/home/pengjian/anaconda3/envs/PyTorch/lib/python3.10/site-packages/torch/autograd/__init__.py:251: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [384, 384, 1, 1], strides() = [384, 1, 384, 384]
+bucket_view.sizes() = [384, 384, 1, 1], strides() = [384, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:320.)
+  Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+/home/pengjian/anaconda3/envs/PyTorch/lib/python3.10/site-packages/torch/autograd/__init__.py:251: UserWarning: Grad strides do not match bucket view strides. This may indicate grad was not created according to the gradient layout contract, or that the param's strides changed since DDP was constructed.  This is not an error, but may impair performance.
+grad.sizes() = [384, 384, 1, 1], strides() = [384, 1, 384, 384]
+bucket_view.sizes() = [384, 384, 1, 1], strides() = [384, 1, 1, 1] (Triggered internally at ../torch/csrc/distributed/c10d/reducer.cpp:320.)
+  Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+predshape1,torch.Size([1, 24, 440, 408])
+labelshape1,torch.Size([1, 24, 440, 408])
+predshape1,torch.Size([1, 24, 440, 408])
+labelshape1,torch.Size([1, 24, 440, 408])
+ddpEpoch 13
+-------------------------------
+ddp Sample of train: 61344
+predshape1,torch.Size([8, 24, 440, 408])
+labelshape1,torch.Size([8, 24, 440, 408])
+predshape1,torch.Size([8, 24, 440, 408])
+labelshape1,torch.Size([8, 24, 440, 408])
+predshape1,torch.Size([1, 24, 440, 408])
+labelshape1,torch.Size([1, 24, 440, 408])
+predshape1,torch.Size([1, 24, 440, 408])
+labelshape1,torch.Size([1, 24, 440, 408])
+ddpEpoch 14
+-------------------------------
+ddp Sample of train: 61344
+predshape1,torch.Size([8, 24, 440, 408])
+labelshape1,torch.Size([8, 24, 440, 408])
+predshape1,torch.Size([8, 24, 440, 408])
+labelshape1,torch.Size([8, 24, 440, 408])
+predshape1,torch.Size([1, 24, 440, 408])
+labelshape1,torch.Size([1, 24, 440, 408])
+predshape1,torch.Size([1, 24, 440, 408])
+labelshape1,torch.Size([1, 24, 440, 408])
+ddpEpoch 15
+-------------------------------
+ddp Sample of train: 61344
+predshape1,torch.Size([8, 24, 440, 408])
+labelshape1,torch.Size([8, 24, 440, 408])
+predshape1,torch.Size([8, 24, 440, 408])
+labelshape1,torch.Size([8, 24, 440, 408])
+predshape1,torch.Size([1, 24, 440, 408])
+labelshape1,torch.Size([1, 24, 440, 408])
+predshape1,torch.Size([1, 24, 440, 408])
+labelshape1,torch.Size([1, 24, 440, 408])
+ddpEpoch 16
+-------------------------------
+ddp Sample of train: 61344
+predshape1,torch.Size([8, 24, 440, 408])
+labelshape1,torch.Size([8, 24, 440, 408])
+predshape1,torch.Size([8, 24, 440, 408])
+labelshape1,torch.Size([8, 24, 440, 408])
+predshape1,torch.Size([1, 24, 440, 408])
+labelshape1,torch.Size([1, 24, 440, 408])
+predshape1,torch.Size([1, 24, 440, 408])
+labelshape1,torch.Size([1, 24, 440, 408])
+ddpEpoch 17
+-------------------------------
+ddp Sample of train: 61344
+predshape1,torch.Size([8, 24, 440, 408])
+labelshape1,torch.Size([8, 24, 440, 408])
+predshape1,torch.Size([8, 24, 440, 408])
+labelshape1,torch.Size([8, 24, 440, 408])
+predshape1,torch.Size([1, 24, 440, 408])
+labelshape1,torch.Size([1, 24, 440, 408])
+predshape1,torch.Size([1, 24, 440, 408])
+labelshape1,torch.Size([1, 24, 440, 408])
+ddpEpoch 18
+-------------------------------
+ddp Sample of train: 61344
+predshape1,torch.Size([8, 24, 440, 408])
+labelshape1,torch.Size([8, 24, 440, 408])
+predshape1,torch.Size([8, 24, 440, 408])
+labelshape1,torch.Size([8, 24, 440, 408])
+predshape1,torch.Size([1, 24, 440, 408])
+labelshape1,torch.Size([1, 24, 440, 408])
+predshape1,torch.Size([1, 24, 440, 408])
+labelshape1,torch.Size([1, 24, 440, 408])
+ddpEpoch 19
+-------------------------------
+ddp Sample of train: 61344
+predshape1,torch.Size([8, 24, 440, 408])
+labelshape1,torch.Size([8, 24, 440, 408])
+predshape1,torch.Size([8, 24, 440, 408])
+labelshape1,torch.Size([8, 24, 440, 408])
+predshape1,torch.Size([1, 24, 440, 408])
+labelshape1,torch.Size([1, 24, 440, 408])
+predshape1,torch.Size([1, 24, 440, 408])
+labelshape1,torch.Size([1, 24, 440, 408])
+ddpEpoch 20
+-------------------------------
+ddp Sample of train: 61344
+predshape1,torch.Size([8, 24, 440, 408])
+labelshape1,torch.Size([8, 24, 440, 408])
+predshape1,torch.Size([8, 24, 440, 408])
+labelshape1,torch.Size([8, 24, 440, 408])
+predshape1,torch.Size([1, 24, 440, 408])
+labelshape1,torch.Size([1, 24, 440, 408])
+predshape1,torch.Size([1, 24, 440, 408])
+labelshape1,torch.Size([1, 24, 440, 408])
+ddpEpoch 21
+-------------------------------
+ddp Sample of train: 61344
+predshape1,torch.Size([8, 24, 440, 408])
+labelshape1,torch.Size([8, 24, 440, 408])
+predshape1,torch.Size([8, 24, 440, 408])
+labelshape1,torch.Size([8, 24, 440, 408])
+[2025-09-25 02:40:45,288] torch.distributed.elastic.agent.server.api: [WARNING] Received Signals.SIGHUP death signal, shutting down workers
+[2025-09-25 02:40:45,289] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 3045509 closing signal SIGHUP
+[2025-09-25 02:40:45,290] torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 3045510 closing signal SIGHUP
+Traceback (most recent call last):
+  File "/home/pengjian/anaconda3/envs/PyTorch/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/home/pengjian/anaconda3/envs/PyTorch/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/home/pengjian/anaconda3/envs/PyTorch/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    run(args)
+  File "/home/pengjian/anaconda3/envs/PyTorch/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    elastic_launch(
+  File "/home/pengjian/anaconda3/envs/PyTorch/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/pengjian/anaconda3/envs/PyTorch/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 255, in launch_agent
+    result = agent.run()
+  File "/home/pengjian/anaconda3/envs/PyTorch/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 124, in wrapper
+    result = f(*args, **kwargs)
+  File "/home/pengjian/anaconda3/envs/PyTorch/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 736, in run
+    result = self._invoke_run(role)
+  File "/home/pengjian/anaconda3/envs/PyTorch/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 877, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/home/pengjian/anaconda3/envs/PyTorch/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 62, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 3045203 got signal: 1

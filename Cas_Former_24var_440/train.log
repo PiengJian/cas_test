@@ -1,0 +1,39 @@
+nohup: ignoring input
+/home/pengjian/anaconda3/bin/python: can't open file '/home/pengjian/CAS_Former_440/CAS_Former_440/pretrain.py': [Errno 2] No such file or directory
+/home/pengjian/anaconda3/bin/python: can't open file '/home/pengjian/CAS_Former_440/CAS_Former_440/pretrain.py': [Errno 2] No such file or directory
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 2) local_rank: 0 (pid: 3559975) of binary: /home/pengjian/anaconda3/bin/python
+Traceback (most recent call last):
+  File "/home/pengjian/anaconda3/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==1.12.1', 'console_scripts', 'torchrun')())
+  File "/home/pengjian/anaconda3/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 345, in wrapper
+    return f(*args, **kwargs)
+  File "/home/pengjian/anaconda3/lib/python3.10/site-packages/torch/distributed/run.py", line 761, in main
+    run(args)
+  File "/home/pengjian/anaconda3/lib/python3.10/site-packages/torch/distributed/run.py", line 752, in run
+    elastic_launch(
+  File "/home/pengjian/anaconda3/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 131, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/pengjian/anaconda3/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 245, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+CAS_Former_440/pretrain.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2025-07-24_20:41:10
+  host      : szim-h800
+  rank      : 1 (local_rank: 1)
+  exitcode  : 2 (pid: 3559976)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-07-24_20:41:10
+  host      : szim-h800
+  rank      : 0 (local_rank: 0)
+  exitcode  : 2 (pid: 3559975)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
